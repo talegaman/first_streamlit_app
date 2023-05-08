@@ -42,3 +42,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Output in the screen as a table
 streamlit.dataframe(fruityvice_normalized)
+
+my_data_row = my_cur.fetchone()
+streamlit.header("The fruit load list contains:")
+streamlit.dataframe(my_data_row)
