@@ -1,2 +1,3 @@
-# requeriments.txt
+# requirements.txt
 snowflake-connector-python
+cff==1.15.0
